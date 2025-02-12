@@ -123,7 +123,7 @@ export default function Sidenav() {
                 ></ListItemIcon>
                   <InboxIcon />
                 <ListItemText
-                  primary="Home"
+                  primary="Homes"
                   sx={[
                     open
                       ? {

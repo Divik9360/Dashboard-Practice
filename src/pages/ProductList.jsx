@@ -8,7 +8,7 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Button,
+  Button, 
   Dialog,
   DialogActions,
   DialogContent,
@@ -84,7 +84,7 @@ export default function UserTable() {
       updatedUsers[editIndex] = updatedUser;
       setUsers(updatedUsers);
     } else {
-      setUsers([...users, updatedUser]);
+      setUsers([updatedUser,...users]);
     }
     setOpen(false);
   };
@@ -130,7 +130,7 @@ export default function UserTable() {
                     ) : (
                       user[column.id]
                     )}
-                  </TableCell>
+                  </TableCell>  
                 ))}
               </TableRow>
             ))}
